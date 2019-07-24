@@ -8,7 +8,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel='stylesheet' href='layout.css'>
 
     <style>
         * {
@@ -48,37 +47,11 @@
     </style>
 </head>
 <body>
-<div><br/></div>
-<div><img src="image/frontlogo.png"></div>
-<div class="rectangle col-lg-4 col-md-6 col-sm-8 col-xs-10">
-    <div>
-        <div></div>
-        <div>
-            <div>
-                <br/>
-                <h3 class="mt-2">우정 테스트 만들기</h3><br/>
-                <form method="GET" action="#">
-                    이름: <input type='text' name="name"><br/><br/>
-                    제페토코드: <input type='text' name="code"><br/><br/>
-                    <div style="background-color: #33EEA7"><input type='submit' value="시작하기"></div>
-                </form>
-            </div>
-        </div>
-        <div></div>
-        <div class="mt-5" style="background-color: #F1F3F8; height:150px;">
-            <div>
-                <div style="text-align: left; padding: 10px 10px;">
-                    <p>재패토를<br/>다운로드 하세요</p>
-                </div>
-                <div>
-                    <div style="width: 320px; border:2px solid;">
-                        <p style="margin:0 auto; padding:5px;">Download ZEPETO</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div><br/><br/><br/></div>
+    <div class="rectangle col-lg-4 col-md-6 col-sm-8 col-xs-10">
+        {% block content %}
+        {% endblock %}
     </div>
-</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

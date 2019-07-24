@@ -1,10 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "quizgame/layout.html" %}
 
-</body>
-</html>
+{% block content %}
+<div><br/></div>
+<div><img src="https://static.zzz.studio/static/logoQuiz%403x.png"></div>
+<div>
+    <div>
+        <div></div>
+        <div>
+            <div>
+                <br/>
+                <h3 class="mt-2">우정 테스트 만들기</h3><br/>
+                <form method="GET" action="#">
+                    이름: <input type='text' name="name"><br/><br/>
+                    제페토코드: <input type='text' name="code"><br/><br/>
+                    <div style="background-color: #33EEA7"><input type='submit' value="시작하기"></div>
+                </form>
+            </div>
+        </div>
+        <div></div>
+        <div class="mt-5" style="background-color: #F1F3F8; height:150px;">
+            <div>
+                <div style="text-align: left; padding: 10px 10px;">
+                    <p>재패토를<br/>다운로드 하세요</p>
+                </div>
+                <div>
+                    <div style="width: 320px; border:2px solid;">
+                        <p style="margin:0 auto; padding:5px;">Download ZEPETO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
