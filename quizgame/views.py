@@ -21,11 +21,11 @@ def quizmaker_create(request):
         return render(request, '#')
 
 def quizmaker_update(request, pk):
+
     if request.method == 'POST':
         user = get_object_or_404(Quizmaker, pk=pk)
-        user.count = request.POST.get('choice.id') ==
-        user.contents = request.POST['contents']
-        user.author = request.POST['author']
+        user.count = request.POST.get('choice.id')
+
         user.save()
         return redirect(reverse('core:article_detail', kwargs={'pk': article.pk}))
     elif request.method == 'GET':
