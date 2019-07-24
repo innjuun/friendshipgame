@@ -13,6 +13,7 @@ def quizmaker_create(request):
         user = Quizmaker()
         user.username = request.POST['name']
 
+
         user.save()
         return redirect(reverse('#', kwargs={'pk': user.id}))
 
