@@ -1,6 +1,14 @@
 {% extends "quizgame/layout.html" %}
 
 {% block content %}
-    <div>1/10</div>
-    <div><h2>당신의 성격은?</h2></div>
+    <div>/10</div>
+    <div><h2>{{ user.name }}이<br/> 좋아하는 것은?</h2></div>
+    <div>
+        <form method="POST">
+            <input type="submit" value="초콜릿">
+        </form>
+        <form method="POST">
+            <input type="submit" value="사탕">
+        </form>
+    </div>
 {% endblock %}
